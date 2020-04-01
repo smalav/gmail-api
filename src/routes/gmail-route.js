@@ -7,4 +7,8 @@ router.get('/recent-ten-email', router.fetchEmail = (req, res, next)=>{
     gmailService.fetchEmail(req, res, next);
 })
 
+router.get('/email-body/:id', router.fetchEmailBody = (req, res, next)=>{
+    gmailService.fetchEmailBody(req, res, next);
+})
+
 module.exports = router;
